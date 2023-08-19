@@ -1,0 +1,116 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block styles %}
+{% endblock styles %}
+{% block title %}
+home
+{% endblock title %}
+{% block content %}
+
+<div class="homebg">
+    {% include 'partials/lagNav.html' %}
+    <div class="homemd">
+        <div class="info px-5 ">
+            <h1 class="swing" data-aos="fade-down">Welcome to reference Ghana</h1>
+            <h3>Ghana Surveyors</h3>
+            <p>Surveying and mapping has evolved over the year and References Ghana is here to make 
+                your journey even more comfortable. Providing you with the most updated surveying 
+                and mapping solutions ranging from GNSS to rigid surveys. Choose any of our services below to explore
+                your solution.
+            </p>
+            <a href={% url 'signup' %}>
+              <button type="button" class="homebt">
+                  Register
+              </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+<section class="services bg-light">
+    <center><h1 data-aos="fade-down">Our Services</h1></center><br>
+    <div class="row px-0 mx-0 row-cols-1 row-cols-lg-3 row-cols-md-3">
+        <div class="col" data-aos="fade-up">
+            <div class="card">
+                <img src="{% static 'img/s2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Request Reference Data</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn buttons">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class="col" data-aos="fade-down">
+            <div class="card" >
+                <img src="{% static 'img/s2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Post your problems</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn buttons">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+        <div class="col" data-aos="fade-up">
+            <div class="card">
+                <img src="{% static 'img/s1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">View Posts</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn buttons">Go somewhere</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="admins"><br>
+    <center><h1 data-aos="fade-down">Adminstrators</h1></center>
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 px-0 mx-0 my-2">
+        <div class="col admin-cards" data-aos="fade-up">
+            <div class="card">
+                <img src="{% static 'img/admin1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col admin-cards" data-aos="fade-up">
+            <div class="card">
+                <img src="{% static 'img/admin2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col admin-cards" data-aos="fade-up">
+            <div class="card" >
+                <img src="{% static 'img/admin1.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                </div>
+              </div>
+        </div>
+        <div class="col admin-cards" data-aos="fade-up">
+            <div class="card" >
+                <img src="{% static 'img/admin2.jpg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+{% include 'partials/footer.html' %}
+
+
+
+{% endblock content %}

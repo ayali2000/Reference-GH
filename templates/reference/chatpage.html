@@ -1,0 +1,48 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block styles %}
+{% endblock styles %}
+{% block title %}
+References
+{% endblock title %}
+{% block content %}
+{% include 'partials/nav2.html' %}
+<div class="row mx-0 px-0">
+    <div class="col-2 px-0 d-lg-block d-none" style="height: calc(100vh - 50px);">
+        <div class="chatsidebar sticky-top">
+            <div class="chatpills"></div>
+            <div class="chatpills"></div>
+            <div class="chatpills"></div>
+            <div class="chatpills"></div>
+            <div class="chatpills"></div>
+            <div class="chatsidebarbottom chatpills">
+                hello
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-7  bg-light chatlist">
+        {% for i in chat  %}
+        <div class="chatmsg mt-3">
+            <div class="row">
+                <div class="col-1 msgid">
+                    <img src={% static 'img/s1.jpg' %} alt="" style="height: 30px; width: 30px; border-radius: 50%;">
+                </div>
+                <div class="col msg">
+                 {{i.message}} 
+                </div>
+            </div>
+            <div class="msginfo mt-3 mb-0">
+                <div class="row mb-0">
+                    <div class="col"><small>Hello</small></div>
+                    <div class="col"><small>{{i.date.date}}</small></div>
+                    <div class="col"><small>replies</small></div>
+                </div>
+            </div>
+            <hr>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="col d-lg-block d-none"></div>
+</div>
+<!-- {% include 'partials/footer.html' %} -->
+{% endblock %}

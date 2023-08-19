@@ -1,0 +1,52 @@
+{% extends 'partials/base.html' %}
+{% load static %}
+{% block styles %}
+{% endblock styles %}
+{% block title %}
+References
+{% endblock title %}
+{% block content %}
+{% include 'partials/nav2.html' %}
+<div class="refbg bg-light"><br>
+   <div class="row mx-0 px-0">
+    <div class="col d-none d-lg-block d-md-block">
+        <div class="sticky-top">
+            hello
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <div class="reflist">
+            <form action="" method="GET">
+                <div class="searchbox">
+                    <input type="search" name="q" id="refsearch" placeholder="search for teferences">
+                    <input type="submit" value="search" id="searchbtn">
+                </div>
+            </form><br>
+            <div class="filter">
+                Filter by Region: <span>
+                    <select name="" id="filterrel" style="width: 100px; color: black;">
+                        <option value="Accra">Accra</option>
+                        <option value="Kumasi">Kumasi</option>
+                        <option value="Cape">Cape</option>
+                        <option value="Northern">Northern</option>
+                        <option value="West">West</option>
+                    </select>
+                </span>
+            </div><br>
+            <div class="references">
+                {% for i in stations %}
+                <div class="stationbox">
+                    hello
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col d-none d-lg-block d-md-block">
+        hello
+    </div>
+    
+   </div>
+</div>
+{% include 'partials/footer.html' %}
+{% endblock %}

@@ -1,0 +1,16 @@
+footer{
+    width: auto;
+    background-color: blueviolet;
+}
+
+
+.footerItem>ul>li>a{
+    text-decoration: none;
+    color: white;
+    list-style-type: none;
+}
+
+.footerItem>h1{
+    font-size: 24px;
+    color: white;
+}

@@ -1,0 +1,33 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+<div class="homebg">
+    {% include 'partials/lagNav.html' %}
+    <div class="homemd">
+        <div class="row py-5 w-100 justify-content-center">
+            <div class="col-lg-4">
+                <form method = 'POST'>
+                    {% csrf_token %}
+                    {% if messages %}
+                    {% for message in messages %}
+                    <p style="padding: 1%; color:white;background-color: rgb(0, 102, 255);">{{message}}</p>
+                    {% endfor %}
+                    {% endif %}
+                    <div>
+                        {{frm.username}}<br>
+                        {{frm.email}}<br>
+                        {{frm.first_name}}<br>
+                        {{frm.last_name}}<br>
+                        {{frm.password1}}<br>
+                        {{frm.password2}}<br>
+                        <input class = "btn btn-primary" type = 'submit' style='background-color:blueviolet;'></input>Already have an account? <a href={% url 'login' %}>login</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="signuppg bg-light" style="display: flex; justify-content: center;">
+    
+</div>
+{% include 'partials/footer.html' %}
+{% endblock content %}

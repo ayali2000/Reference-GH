@@ -1,0 +1,75 @@
+.homebg{
+    height: 100vh;
+    width: auto;
+    background: linear-gradient(to right, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url('bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+
+.homemd{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    width: 600px;
+}
+
+.info > h1, .info > h3 {
+    color: white;
+    line-height: 4rem;
+    font-size: 3rem;
+}
+
+
+.info > h3 {
+    color: blueviolet;
+    line-height: 4rem;
+    font-size: 2rem;
+}
+
+.info > p {
+    color: rgba(255, 255, 255, 0.536);
+    font-weight: lighter;
+}
+
+
+.homebt{
+    margin-top: 10px;
+    height: 40px;
+    width: 150px;
+    background-color: blueviolet;
+    color: white;
+}
+
+
+.btn{
+    background-color: blueviolet;
+    color: white;
+}
+
+
+.services{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.admins{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    background: url('adminbg.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
